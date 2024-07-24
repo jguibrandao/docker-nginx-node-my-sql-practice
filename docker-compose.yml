@@ -36,7 +36,7 @@ services:
     environment:
       - MYSQL_DATABASE=nodedb
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_USER=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=false
 
 networks:
   default-network:
