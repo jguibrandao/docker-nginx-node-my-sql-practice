@@ -6,12 +6,14 @@ Desafio do curso FullCycle, no módulo de Docker.
 
 - Através de um proxy reverso, o usuário deve acessar nossa aplicação NodeJS e inserir um item em nossa tabela MySQL.
 
-# A aplicação deve retornar:
+# Funcionamento:
 
 ```html
 <h1>Full Cycle Rocks!</h1>
 
-- Lista com os itens cadastrados no nosso MySQL DB.
+- A aplicação, a cada requisição no nosso nginx, ativa o nosso arquivo node,
+insere um nome aleatório através da biblioteca "faker" e nos mostra estes itens
+em "localhost:8080".
 ```
 
 # Pré requisitos
